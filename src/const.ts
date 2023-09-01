@@ -1,6 +1,6 @@
 import { localize } from './localize/localize';
 
-export const CARD_VERSION = '5.9.3';
+export const CARD_VERSION = '5.9.4';
 
 export const states = {
   status: {
@@ -108,6 +108,26 @@ export const body_kg = {
       value: 'inside',
     },
     color: 'var(--score-card-color, var(--ha-card-background))',
+  },
+  metabolic_age: {
+    key: 'metabolic_age',
+    label: localize(`body.${'metabolic_age'}`),
+    icon: '/local/images/bodyscoreIcon/metabolic_age.png',
+    unit: localize(`unit.${' years'}`),
+    direction: 'right',
+    height: '30px',
+    width: '100%',
+    positions: {
+      icon: 'outside',
+      name: 'inside',
+      minmax: 'off',
+      value: 'inside',
+    },
+    color: 'var(--score-card-color, var(--ha-card-background))',
+    max: '',
+    min: '',
+    severity: '',
+    target: '',
   },
   visceral_fat: {
     key: 'visceral_fat',
@@ -353,26 +373,6 @@ export const body_kg = {
     },
     color: 'var(--score-card-color, var(--ha-card-background))',
   },
-  metabolic_age: {
-    key: 'metabolic_age',
-    label: localize(`body.${'metabolic_age'}`),
-    icon: '/local/images/bodyscoreIcon/metabolic_age.png',
-    unit: localize(`unit.${' years'}`),
-    direction: 'right',
-    height: '30px',
-    width: '100%',
-    positions: {
-      icon: 'outside',
-      name: 'inside',
-      minmax: 'off',
-      value: 'inside',
-    },
-    color: 'var(--score-card-color, var(--ha-card-background))',
-    max: '',
-    min: '',
-    severity: '',
-    target: '',
-  },
 };
 
 export const body_lb = {
@@ -416,6 +416,26 @@ export const body_lb = {
       value: 'inside',
     },
     color: 'var(--score-card-color, var(--ha-card-background))',
+  },
+  metabolic_age: {
+    key: 'metabolic_age',
+    label: localize(`body.${'metabolic_age'}`),
+    icon: '/local/images/bodyscoreIcon/metabolic_age.png',
+    unit: localize(`unit.${' years'}`),
+    direction: 'right',
+    height: '30px',
+    width: '100%',
+    positions: {
+      icon: 'outside',
+      name: 'inside',
+      minmax: 'off',
+      value: 'inside',
+    },
+    color: 'var(--score-card-color, var(--ha-card-background))',
+    max: '',
+    min: '',
+    severity: '',
+    target: '',
   },
   visceral_fat: {
     key: 'visceral_fat',
@@ -661,26 +681,6 @@ export const body_lb = {
     },
     color: 'var(--score-card-color, var(--ha-card-background))',
   },
-  metabolic_age: {
-    key: 'metabolic_age',
-    label: localize(`body.${'metabolic_age'}`),
-    icon: '/local/images/bodyscoreIcon/metabolic_age.png',
-    unit: localize(`unit.${' years'}`),
-    direction: 'right',
-    height: '30px',
-    width: '100%',
-    positions: {
-      icon: 'outside',
-      name: 'inside',
-      minmax: 'off',
-      value: 'inside',
-    },
-    color: 'var(--score-card-color, var(--ha-card-background))',
-    max: '',
-    min: '',
-    severity: '',
-    target: '',
-  },
 };
 
 export const buttons = {
@@ -730,7 +730,7 @@ export const models = {
       gender: { key: 'gender' },
     },
     attributes_lb: {
-      weight: { 
+      weight: {
         key: 'weight',
         compute: compute.convertkgtolb,
       },
@@ -743,6 +743,7 @@ export const models = {
       bmi: { key: 'bmi' },
       bmi_label: { key: 'bmi_label' },
       visceral_fat: { key: 'visceral_fat' },
+      metabolic_age: false,
       body_fat: false,
       protein: false,
       water: false,
@@ -752,12 +753,12 @@ export const models = {
       ideal: { key: 'ideal' },
       basal_metabolism: { key: 'basal_metabolism' },
       body_type: false,
-      metabolic_age: false,
     },
     body_lb: {
       bmi: { key: 'bmi' },
       bmi_label: { key: 'bmi_label' },
       visceral_fat: { key: 'visceral_fat' },
+      metabolic_age: false,
       body_fat: false,
       protein: false,
       water: false,
@@ -773,7 +774,6 @@ export const models = {
       },
       basal_metabolism: { key: 'basal_metabolism' },
       body_type: false,
-      metabolic_age: false,
     },
   },
   true: {
@@ -790,7 +790,7 @@ export const models = {
       gender: { key: 'gender' },
     },
     attributes_lb: {
-      weight: { 
+      weight: {
         key: 'weight',
         compute: compute.convertkgtolb,
       },
@@ -802,6 +802,7 @@ export const models = {
     body_kg: {
       bmi: { key: 'bmi' },
       bmi_label: { key: 'bmi_label' },
+      metabolic_age: { key: 'metabolic_age' },
       visceral_fat: { key: 'visceral_fat' },
       body_fat: { key: 'body_fat' },
       protein: { key: 'protein' },
@@ -812,11 +813,11 @@ export const models = {
       ideal: { key: 'ideal' },
       basal_metabolism: { key: 'basal_metabolism' },
       body_type: { key: 'body_type' },
-      metabolic_age: { key: 'metabolic_age' },
     },
     body_lb: {
       bmi: { key: 'bmi' },
       bmi_label: { key: 'bmi_label' },
+      metabolic_age: { key: 'metabolic_age' },
       visceral_fat: { key: 'visceral_fat' },
       body_fat: { key: 'body_fat' },
       protein: { key: 'protein' },
@@ -839,7 +840,6 @@ export const models = {
       },
       basal_metabolism: { key: 'basal_metabolism' },
       body_type: { key: 'body_type' },
-      metabolic_age: { key: 'metabolic_age' },
     },
   },
 };

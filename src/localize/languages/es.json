@@ -51,13 +51,13 @@
     "metabolic_age": "Edad metabólica"
   },
   "body_value": {
-    "Skinny": "Flaco",
-    "Balanced-skinny": "Flaco equilibrado",
-    "Skinny-muscular": "Flaco musculoso",
+    "Skinny": "Delgado",
+    "Balanced-skinny": "Delgado equilibrado",
+    "Skinny-muscular": "Delgado musculoso",
     "Balanced": "Equilibrado",
     "Balanced-muscular": "Musculuso equilibrado",
     "Lack-exercise": "Falto de ejercicio",
-    "Thick-set": "Rechoncho",
+    "Thick-set": "Regordete",
     "Obese": "Obeso",
     "Overweight": "Sobrepeso",
     "Underweight": "Por debajo del peso normal",
@@ -65,7 +65,7 @@
     "Slight overweight": "Ligero sobrepeso",
     "Moderate obesity": "Obesidad moderada",
     "Severe obesity": "Obesidad severa",
-    "Massive obesity": "Obesidad masiva",
+    "Massive obesity": "Obesidad muy severa",
     "unavailable": "no disponible"
   },
   "unit": {
@@ -85,6 +85,9 @@
     "unit": "Convertir kg a lbs",
     "unit_aria_label_on": "Activar conversión",
     "unit_aria_label_off": "Desactivar conversión",
+    "theme": "Configure the theme you use.",
+    "theme_aria_label_on": "Mostrar tema claro on",
+    "theme_aria_label_off": "Mostrar tema oscuro off",
     "show_name": "¿Mostrar el nombre de la cuenta como título?",
     "show_name_aria_label_on": "Mostrar nombre como título",
     "show_name_aria_label_off": "Ocultar nombre como título",
@@ -107,10 +110,10 @@
     "show_buttons": "¿Permitir cambio de cuenta?",
     "show_buttons_aria_label_on": "Mostrar botones de cuenta",
     "show_buttons_aria_label_off": "Ocultar botones de cuenta",
-    "code_information": "LOS CAMBIOS SÓLO APARECERÁN DESPUÉS DE QUE HAYAN SIDO GUARDADOS.",
+    "code_information": "LOS CAMBIOS SÓLO APARECERÁN DESPUÉS DE QUE HAYAN SIDO GUARDADOS",
     "header_options": "1. Opciones de cabecera de tarjeta",
     "body_options": "2. Más opciones de tarjeta",
     "warning": "ATENCIÓN:",
-    "code_only_note": "Opciones adicionales sólo están disponibles en el editor de código."
+    "code_only_note": "Las opciones adicionales sólo están disponibles en el editor de código."
   }
 }

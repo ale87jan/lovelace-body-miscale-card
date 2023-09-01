@@ -1,8 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import serve from 'rollup-plugin-serve';
-import { terser } from 'rollup-plugin-terser';
+import { terser } from '@rollup/plugin-terser';
 import json from '@rollup/plugin-json';
 import ignore from './rollup-plugins/ignore.js';
 import { ignoreTextfieldFiles } from './elements/ignore/textfield.js';

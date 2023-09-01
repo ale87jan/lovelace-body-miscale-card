@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v5.9.4
+
+- added default colors according to the theme
+
 ## v5.9.3
 
 - added always show details
@@ -84,7 +88,7 @@ All notable changes to this project will be documented in this file.
                     (work = color, height, max, min, positions, severity, target, width)
   Severity Options = OK (from, to, color)
   Positions Options = OK (icon, name, minmax, value (inside, outside, off))
-  
+
   To know the start, destination, color and target values, open your Mi Fit app on your smartphone.
 
 ## v5.0.0
@@ -164,7 +168,7 @@ example customize:
 body:
   water:
     label: 'Water: '
-  
+
 - add the customize icon
 
 ## 1.0.0

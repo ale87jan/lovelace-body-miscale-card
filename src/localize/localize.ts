@@ -39,7 +39,7 @@ const languages: any = {
   const section = string.split('.')[0];
   const key = string.split('.')[1];
 
-  const lang = (localStorage.getItem('selectedLanguage') || navigator.language.split('-')[0] || 'en')
+  const lang = (localStorage.getItem('selectedLanguage') != 'null'? localStorage.getItem('selectedLanguage') : navigator.language.split('-')[0] || 'en')
     .replace(/['"]+/g, '')
     .replace('-', '_');
   let translated: string;

@@ -5,6 +5,25 @@ export const styles = css`
     display: flex;
     flex-direction: column;
     height: 100%;
+    --google-red: #F54436;
+    --rgb-google-red: 245,68,54;
+    --google-green: #01C852;
+    --rgb-google-green: 1,200,82;
+    --google-yellow: #FF9101;
+    --rgb-google-yellow: 255,145,1;
+    --google-blue: #3D5AFE;
+    --rgb-google-blue: 61,90,254;
+    --google-violet: #661FFF;
+    --rgb-google-violet: 102,31,255;
+    --google-grey: #BBBBBB;
+    --rgb-google-grey: 187,187,187;
+    --color-red: 245, 68, 54;
+    --color-green: 1, 200, 82;
+    --color-yellow: 255, 145, 1;
+    --color-blue: 61, 90, 254;
+    --color-purple: 102, 31, 255;
+    --color-grey: 187, 187, 187;
+    --color-pink: 233, 30, 99;
   }
   .background {
     background-repeat: no-repeat;
