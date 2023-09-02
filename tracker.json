@@ -1,9 +1,9 @@
 {
   "body-miscale-card": {
-    "updated_at": "2023-01-14",
-    "version": "v5.9.3",
-    "remote_location": "https://raw.githubusercontent.com/dckiller51/lovelace-body-miscale-card/master/dist/body-miscale-card.js",
-    "visit_repo": "https://github.com/dckiller51/lovelace-body-miscale-card",
-    "changelog": "https://github.com/dckiller51/lovelace-body-miscale-card/blob/master/CHANGELOG.md"
+    "updated_at": "2023-09-03",
+    "version": "v5.9.4-alpha.3",
+    "remote_location": "https://github.com/ale87jan/lovelace-body-miscale-card/master/dist/body-miscale-card.js",
+    "visit_repo": "https://github.com/ale87jan/lovelace-body-miscale-card",
+    "changelog": "https://github.com/ale87jan/lovelace-body-miscale-card/blob/master/CHANGELOG.md"
   }
 }
